@@ -65,7 +65,7 @@ end
 
 cart = ShoppingCart.new "orange juice", 10
 cart = ShoppingCart.new "orange juice", 10
-cart = ShoppingCart.new "orange juice", 10
+cart = ShoppingCart.new "rice", 2
 cart = ShoppingCart.new "orange juice", 10
 puts ShoppingCart.weekend
 puts ShoppingCart.total
