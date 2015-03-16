@@ -7,7 +7,9 @@ class ShoppingCart
 
   
   def self.total
-    return @@price.each { |n| sum += n}
+    sum = 0
+    @@price.each { |n| sum += n}
+    return sum
   end
   
   def initialize(item, price)
@@ -66,3 +68,4 @@ cart = ShoppingCart.new "orange juice", 10
 cart = ShoppingCart.new "orange juice", 10
 cart = ShoppingCart.new "orange juice", 10
 puts ShoppingCart.weekend
+puts ShoppingCart.total
