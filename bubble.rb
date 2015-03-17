@@ -14,5 +14,7 @@ def bubble_sort(array)
     break if not swapped
   end
  
-  array
+  array 
 end
+name = ["he", "we", "apple", "sam"]
+puts bubble_sort(name)
