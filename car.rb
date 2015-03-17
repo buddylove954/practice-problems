@@ -1,17 +1,18 @@
 class Car
-	attr_reader(:brand)
+	attr_reader(:brand, :sound)
 
-	def initialize(brand)
+	def initialize(brand, sound)
 		@brand = brand
+		@sound = sound
 	end
 
 	def noise
-		puts "Vroom! the brand is a #{@brand}"
+		puts "#{@sound}"
 	end
 end
 
-blue = Car.new("Toyota")
+blue = Car.new("Toyota", "vroom" )
 blue.noise
 
-red = Car.new("Honda")
+red = Car.new("Honda", "bureung")
 red.noise
