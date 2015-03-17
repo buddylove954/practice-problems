@@ -1,17 +1,18 @@
-def word_sort(str)
-  str = str.gsub(/[^0-9A-Za-z]/, " ")
-  arr = str.split(" ")
-  
-  loop do 
+
+def bubble_sort(array)
+  n = array.length
+  loop do
     swapped = false
-    (arr.length - 1).times do |i|
-      if arr[i].downcase > arr[i + 1].downcase
-        arr[i], arr[i+1] = arr[i + 1], arr[i]
+ 
+    (n-1).times do |i|
+      if array[i].downcase > array[i+1].downcase
+        array[i], array[i+1] = array[i+1], array[i]
         swapped = true
       end
     end
-    break if swapped == false
+ 
+    break if not swapped
   end
-  
-  return arr.inspect
+ 
+  array
 end
