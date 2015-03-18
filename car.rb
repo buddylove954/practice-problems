@@ -1,9 +1,8 @@
 class Car
-	attr_reader(:brand, :sound)
+	attr_reader(:sound)
 	 IO.write("total.txt", 0)
 
-	def initialize(brand, sound)
-		@brand = brand
+	def initialize(sound)
 		@sound = sound
 
 		current = IO.read("total.txt").to_i
@@ -19,9 +18,30 @@ class Car
 	end
 end
 
-blue = Car.new("Toyota", "vroom" )
+blue = Car.new( "vroom" )
 blue.noise
 
-red = Car.new("Honda", "bureung")
+red = Car.new( "bureung")
+
+pink = Car.new( "broooom")
 
 puts Car.total
+
+cars = [blue, red, pink]
+
+cars.each do |car|
+	puts car.noise
+end
+
+sounds = ["broom", "Meek", "Nyan"]
+
+
+car_sound = sounds.map do |sound|
+	Car.new(sound)
+end
+now = car_sound
+
+ans = now.reduce("") { |total, car| total + "#{car.sound} " }
+
+
+p ans
