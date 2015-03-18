@@ -25,8 +25,6 @@ red = Car.new( "bureung")
 
 pink = Car.new( "broooom")
 
-puts Car.total
-
 cars = [blue, red, pink]
 
 cars.each do |car|
@@ -43,5 +41,6 @@ now = car_sound
 
 ans = now.reduce("") { |total, car| total + "#{car.sound} " }
 
+puts Car.total
 
 p ans
