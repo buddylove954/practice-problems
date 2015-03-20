@@ -1,20 +1,40 @@
 # require 'pry'
 # binding.pry
-arr = IO.readlines("term.txt")
+text = IO.readlines("term.txt")
+
+require 'highline'
+
+
+class Poster
+	attr_reader :arr
+	@arr = []
+	def initialize
+		@arr = []
+	end
+
+	def format(array)
+			array.each do |ele|
+			if !(ele.include?("-"))
+			puts post(ele)
+			end
+		end
+
+end
+
+class Screen
+	def initialize
+		@size = HighLine::SystemExtensions.terminal_size
+	end
+	
+	def post(input)
+		num = (size[0] - input.length ) / 2
+		" "* num + "#{input}" 
+	end
+
+end
 
 
 
-def nice(array)
-	i = 0
-  while i < array.length
-  	if array[i].include?("|") || array[i].include?("x")
- 		puts array[i]
-   end
-  	i += 1
-  end
-  	array
-  end
-
-
-nice(arr)
+now = Poster.new
+now.format(text)
 

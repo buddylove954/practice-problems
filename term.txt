@@ -10,21 +10,21 @@ Prepare for the next big thing
 |      Hi       |
 |               |
 ----
-This is
+       This is        
 ----
 Apple's new product
 ----
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+cccccccccccccccccccccccccccccc
 x                             x
 x                             x
 x       The iTerminal         x
 x                             x
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-           x                             x
-           x                             x
-           x       The iTerminal         x
-           x                             x
-           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+x                             x
+x                             x
+x       The iTerminal         x
+x                             x
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 

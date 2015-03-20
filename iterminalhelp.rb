@@ -7,12 +7,12 @@ p size
 
 message = "Are you ready for the iTerminal???"
 message_2 = "type 'next' to advance and 'previous' to go back"
-num_1 = (65 - message.length ) / 2
-num_2 = (65 - message_2.length ) / 2
+num_1 = (81 - message.length ) / 2
+num_2 = (81 - message_2.length ) / 2
 
 
 	i = 0
-while i < 13
+while i < 20
 	puts "\n"
 	i += 1
 end
@@ -20,13 +20,13 @@ end
 puts " "* num_1 + "#{message}" + " "* num_1
 
 	i = 0
-while i < 13
+while i < 20
 	puts "\n"
 	i += 1
 end
 name = gets.chomp
 	i = 0
-while i < 13
+while i < 20
 	puts "\n"
 	i += 1
 end
@@ -34,7 +34,7 @@ end
 puts " "* num_2 + "#{message_2}" + " " * num_2
 
 	i = 0
-while i < 13
+while i < 20
 	puts "\n"
 	i += 1
 end
@@ -52,20 +52,19 @@ while name != "exit"
 	end
 
 	i = 0
-while i < 13
+while i < 20
 	puts "\n"
 	i += 1
 end
 
-num = (65 - slide.length ) / 2
-
-
-puts " "* num + "#{slide}" + " "* num
+num = (81 - slide.length ) / 2
+puts " "*num + "#{slide}" + " "*num
 
 	n = 0
-while n < 13
+while n < 20
 	puts "\n"
 	n += 1
 end
 
 end
+
